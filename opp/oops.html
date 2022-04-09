@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p id="demo"></p>
+    <script>
+        class student{
+
+      constructor(r,n,c){
+    this.roll=r;
+    this.name=n;
+    this.class=c;
+}
+        }
+
+        var e1 = new student[10];
+        for(var i=0; i<e1.length; i++){
+            var r = parseInt(prompt());
+            var n = parseInt(prompt());
+            var c = parseInt(prompt());
+
+            e1[i]= new student(r,n,c);
+            document.getElementById("demo").innerHTML = e1[i]
+
+        }
+
+        
+
+
+    </script>
+</body>
+</html>

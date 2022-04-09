@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<form name="myForm">
+  Name: <input type="text" name="fname" id="name">
+  phone:<input type="number" name="fname" id="phone">
+  email: <input type="email" name="fname" id="email">
+  password:<input type="password" name="fname" id="pass">
+
+  <input type="submit" value="Submit" id="sub" onclick="valida()">
+  </form>
+
+  <script> 
+      function valida(){
+        var N = document.getElementById("name").value;
+        var m = document.getElementById("phone").value;
+        var u = document.getElementById("email").value;
+        var er = document.getElementById("pass").value;
+        
+           
+       if (N==null || N==""){ 
+           document.getElementById("N").innerHTML= ("Name can't be blank"); 
+
+          return false;  
+    
+        }else if(m.length==10){
+            // if(m.isdigit()) {
+            alert("Password must be at least 6 characters long and only numbers");  
+            return false;
+            
+            }
+            // else{
+            //     alert("must be all numbers")
+            // }
+  
+}
+   
+      
+    </script>
+</body>
+</html>
